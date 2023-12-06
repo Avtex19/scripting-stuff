@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <script type="text/javascript" src="index.js" defer></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <form class="user-form">
+      <h1 style="text-align: center">Form</h1>
+      <div class="name">
+        <h3>Name:</h3>
+        <input type="text" required minlength="3" />
+      </div>
+
+      <div class="email">
+        <h3>Email:</h3>
+        <input type="email" required />
+      </div>
+
+      <div class="password">
+        <h3>Password:</h3>
+        <input type="password" id="pswd" required />
+      </div>
+
+      <div class="pswd-again">
+        <h3>Confirm Password:</h3>
+        <input type="password" id="repeat-pswd" required />
+      </div>
+
+      <div class="gender">
+        <h3>Gender:</h3>
+        <div class="radioFM">
+          <div class="column-radio">
+            <input type="radio" name="gender" />
+            <h3>Male</h3>
+          </div>
+          <div class="column-radio">
+            <input type="radio" name="gender" />
+            <h3>Female</h3>
+          </div>
+          <div class="column-radio">
+            <input type="radio" name="gender" />
+            <h3>Other</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="interests">
+        <h3>Interests:</h3>
+        <div class="checkFM">
+          <div class="column-check">
+            <input type="checkbox" />
+            <h3>Sports</h3>
+          </div>
+
+          <div class="column-check">
+            <input type="checkbox" />
+            <h3>Music</h3>
+          </div>
+
+          <div class="column-check">
+            <input type="checkbox" />
+            <h3>Travel</h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="select-country">
+        <h3>Country:</h3>
+        <select class="select-country">
+          <option value="USA">USA</option>
+          <option value="Georgia">Georgia</option>
+          <option value="USA">Portugal</option>
+          <option value="USA">Italy</option>
+        </select>
+      </div>
+
+      <div class="rng">
+        <h3>Choose a value:</h3>
+        <input type="range" min="0" id="rng" max="100" value="50" />
+        <h3 class="output">50</h3>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
