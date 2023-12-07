@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: white;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.todo-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+  
+}
+
+.naming {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.task-handler {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-button {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button button {
+  background-color: inherit;
+  padding: 5px;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #50ac54;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  height: 35px;
+}
+
+.todo-box {
+  width: 400px;
+  height: fit-content;
+  border-radius: 6px;
+  box-shadow: 0 0 9px -1px #000000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  
+}
+
+.task-input input {
+  width: 100%;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid #9c9c9c;
+  font-size: 1.5rem;
+  padding: 6px;
+  outline: transparent;
+}
+
+.task-input input:placeholder-shown {
+  font-size: 1rem;
+  font-family: "Lucid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.tasks div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+  align-items: center;
+  background-color: rgb(224, 225, 227);
+  border-radius: 8px;
+}
+
+.tasks div > p {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  word-break: keep-all;
+  width: 80px;
+  text-align: center;
+  font-family: "Luci Sans", sans-serif;
+}
+
+.text-line-through{
+    text-decoration: line-through;
+}
+
+.tasks div > button {
+  border: none;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.tasksHeight{
+    height: 200px;
+    overflow-y: scroll;
+    padding: 5px;
+ 
+}
+
+
+
