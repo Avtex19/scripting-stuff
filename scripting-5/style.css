@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  background-color: #e0e4ec;
+  
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  min-height: 95vh;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  width: 650px;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  height: fit-content;
+  margin: 20px;
+
+
+ 
+}
+
+.question{
+  font-size: 1.5rem;
+  padding:60px;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: keep-all;
+  height:40px;
+  font-weight: bold;
+}
+
+.answers{
+  display: flex;
+  padding-left: 50px;
+  padding-bottom: 40px;
+  flex-direction: column;
+  
+  
+}
+
+.answers div{
+  font-size: large;
+  display: flex;
+  gap: 0.5rem;
+
+ margin: -5px;
+  
+ 
+}
+
+#submit-btn{
+  background-color: #884ca4;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: large;
+  cursor: pointer;
+  padding: 25px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+
+}
+
+input[type="radio"]{
+  transform: scale(1.3)
+
+}
